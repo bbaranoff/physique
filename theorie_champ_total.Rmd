@@ -51,7 +51,7 @@ En intégrant les formalismes de Kaluza–Klein, Dirac et Einstein dans un cadre
 
 ---
 
-# 1. Connexion unifiée
+# Connexion unifiée
 
 On définit la connexion totale :
 $$
@@ -65,7 +65,7 @@ avec :
 
 ---
 
-# 2. Courbure totale
+# Courbure totale
 
 La courbure associée :
 $$
@@ -87,7 +87,7 @@ $$
 
 ---
 
-# 3. Action unifiée
+# Action unifiée
 
 L’action générale :
 $$
@@ -104,7 +104,7 @@ Cette forme permet de décrire en un seul cadre la structure de l’espace-temps
 
 ---
 
-# 4. Brisure de symétrie et émergence
+# Brisure de symétrie et émergence
 
 Le potentiel de Higgs :
 $$
@@ -118,7 +118,7 @@ crée une brisure de symétrie dynamique, donnant naissance :
 
 ---
 
-# 5. Cohérence et énergie
+# Cohérence et énergie
 
 Chaque champ correspond à une portion cohérente du spectre global :
 $$
@@ -129,7 +129,7 @@ L’énergie n’est plus une grandeur isolée : elle mesure la cohérence entre
 
 ---
 
-# 6. Interprétation éthique
+# Interprétation éthique
 
 Dans ce modèle, l’\textbf{énergie cohérente} — qu’elle soit physique, psychique ou sociale — obéit aux mêmes principes :
 - elle se conserve par résonance,
@@ -140,16 +140,14 @@ Ainsi, l’éthique devient la \textbf{géométrie des flux d’énergie cohére
 
 ---
 
-# 7. Conclusion
+# Conclusion
 
 La théorie du champ total propose une vision où la géométrie, la matière et la conscience ne sont plus séparées.
 Chaque phénomène est une modulation locale d’un champ universel cohérent, et toute action physique est un acte énergétique éthique.
 
 ---
 
-# Signature
 
-\vspace{2cm}
 \begin{center}
 \textbf{Bastien Baranoff}\\
 \small Théorie du champ total — version signée\\

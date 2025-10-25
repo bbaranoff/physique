@@ -31,7 +31,7 @@ Ce formalisme ouvre un cadre unifié pour étudier la **cohérence temporelle**,
 
 # 2. Définition formelle et propriétés
 
-## 2.1 Définition
+## Définition
 
 On définit la densité de cohérence comme la corrélation moyenne entre les amplitudes d’un état quantique à deux instants :
 
@@ -40,7 +40,7 @@ On définit la densité de cohérence comme la corrélation moyenne entre les am
 \]
 où \(A(t)\) est l’amplitude complexe associée à l’état du système.
 
-## 2.2 Propriétés fondamentales
+## Propriétés fondamentales
 
 - **Hermiticité :**
   \[
@@ -67,7 +67,7 @@ Cette forme symétrique garantit la cohérence entre les deux variables temporel
 L’un des intérêts majeurs de \(\rho(t,t')\) réside dans sa **mesurabilité indirecte**.
 Plusieurs protocoles expérimentaux existants permettent d’accéder à ses composantes.
 
-## 3.1 Tomographie temporelle
+## Tomographie temporelle
 
 La **tomographie temporelle** reconstruit \(\rho(t,t')\) en mesurant des observables temporels \(O_k(t)\) et leurs corrélations :
 \[
@@ -84,7 +84,7 @@ C_{k\ell}(t,t') = \langle O_k^\dagger(t)\,O_\ell(t') \rangle,
 
 ---
 
-## 3.2 Mesures faibles
+## Mesures faibles
 
 Les **mesures faibles** fournissent un accès aux éléments diagonaux et hors diagonaux de \(\rho(t,t')\) sans effondrer l’état.
 
@@ -102,7 +102,7 @@ Les **mesures faibles** fournissent un accès aux éléments diagonaux et hors d
 
 ---
 
-## 3.3 Interférométrie à retard variable
+## Interférométrie à retard variable
 
 L’**interférométrie temporelle** mesure directement la cohérence \(\rho(t,t') = \langle A^\dagger(t)A(t') \rangle\)
 via le contraste des franges lorsque le délai entre les bras est ajusté.
