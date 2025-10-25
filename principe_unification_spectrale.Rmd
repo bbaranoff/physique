@@ -1,6 +1,6 @@
 ---
 title: "Principe d’unification spectrale"
-subtitle: "écanique Quantique et Relativité Générale"
+subtitle: "Mécanique Quantique et Relativité Générale"
 author: "Bastien Baranoff"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
