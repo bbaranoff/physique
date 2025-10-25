@@ -10,3 +10,4 @@ rmd_files:
   - "matrice_Operateurs.Rmd"
   - "retropropagation_gradient.Rmd"
   - "charte_energies.Rmd"
+  - "mistral_comment.Rmd"
