@@ -1,0 +1,214 @@
+---
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+  html_document:
+    toc: true
+    toc_depth: 2
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{fontspec}
+  - \setmainfont{Latin Modern Roman}
+  - \usepackage{polyglossia}
+  - \setmainlanguage{french}
+  - \usepackage{csquotes}
+  - \usepackage{amsmath,amssymb,amsthm}
+  - \usepackage{booktabs,paralist,epigraph,hyperref}
+  - \usepackage{tikz}
+  - \usetikzlibrary{calc,shapes.geometric,arrows.meta,decorations.pathmorphing}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Ondes gravitationnelles quantifiées — Développement complet et rigoureux
+
+## 1. Linéarisation de la métrique
+
+On considère un espace-temps presque plat, où la métrique est perturbée
+par une onde gravitationnelle faible :
+
+\[
+g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \qquad |h_{\mu\nu}| \ll 1.
+\]
+
+Le tenseur \( h_{\mu\nu} \) représente la **perturbation métrique**, de
+norme petite devant le fond plat de Minkowski \( \eta_{\mu\nu} \).  
+Dans la **jauge harmonique** :
+
+\[
+\partial^\mu \bar{h}_{\mu\nu} = 0, 
+\qquad
+\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu} h,
+\]
+
+les équations d’Einstein linéarisées prennent la forme d’une équation
+d’onde classique.
+
+---
+
+## 2. Expansion du Lagrangien gravitationnel à l’ordre quadratique
+
+On part du Lagrangien d’Einstein–Hilbert :
+
+\[
+\mathcal{L}_{\text{G}} = \frac{c^4}{16\pi G}\sqrt{-g}\,R.
+\]
+
+En développant jusqu’à l’ordre \( \mathcal{O}(h^2) \), on obtient, dans
+la jauge harmonique :
+
+\[
+\mathcal{L}_G^{(2)} = \frac{c^4}{64\pi G}
+\left[
+\partial_\lambda h_{\mu\nu}\partial^\lambda h^{\mu\nu}
+- 2\,\partial_\mu h^{\mu\nu}\partial^\lambda h_{\lambda\nu}
++ 2\,\partial_\mu h^{\mu\nu}\partial_\nu h
+- \partial_\lambda h\,\partial^\lambda h
+\right].
+\]
+
+Sous les conditions de jauge et de transversalité, cette expression se
+simplifie en une **forme canonique d’onde libre** :
+
+\[
+\boxed{%
+\mathcal{L}_G^{(2)} = \frac{c^4}{64\pi G}\,
+\partial_\lambda h_{\mu\nu}\,\partial^\lambda h^{\mu\nu}}
+\]
+
+---
+
+## 3. Inclusion du terme de correction quantique
+
+Le Lagrangien complet inclut maintenant un terme correctif de type
+**haute dérivation** (issu d’une expansion effective en \( l_P \)) :
+
+\[
+\mathcal{L}_{\text{corr}} =
+\frac{c^4\,l_P^2}{64\pi G}\,
+(\Box h_{\mu\nu})(\Box h^{\mu\nu}),
+\qquad
+l_P^2 = \frac{\hbar G}{c^3}.
+\]
+
+Ainsi, le Lagrangien total devient :
+
+\[
+\boxed{
+\mathcal{L}_{\text{eff}} =
+\frac{c^4}{64\pi G}\left[
+\partial_\lambda h_{\mu\nu}\partial^\lambda h^{\mu\nu}
++ l_P^2(\Box h_{\mu\nu})(\Box h^{\mu\nu})
+\right]}.
+\]
+
+---
+
+## 4. Équation d’onde modifiée
+
+En appliquant le principe de moindre action (\( \delta S = 0 \)), on
+obtient l’équation d’Euler–Lagrange :
+
+\[
+\frac{\partial \mathcal{L}}{\partial h_{\mu\nu}}
+- \partial_\lambda\!\left(
+\frac{\partial \mathcal{L}}{\partial (\partial_\lambda h_{\mu\nu})}
+\right)
++ \Box\!\left(
+\frac{\partial \mathcal{L}}{\partial (\Box h_{\mu\nu})}
+\right)
+= 0.
+\]
+
+Ceci conduit à :
+
+\[
+\boxed{
+\left(1 + l_P^2 \Box\right)\Box h_{\mu\nu} = 0
+\quad\Longrightarrow\quad
+\Box h_{\mu\nu} + l_P^2 \Box^2 h_{\mu\nu} = 0.}
+\]
+
+C’est une **équation d’onde à dérivées d’ordre quatre**, caractéristique
+des modèles de gravité quantique effective.
+
+---
+
+## 5. Analyse spectrale
+
+On cherche une solution plane :
+
+\[
+h_{\mu\nu}(x) = \epsilon_{\mu\nu} e^{i(k_\alpha x^\alpha)}
+= \epsilon_{\mu\nu} e^{i(\mathbf{k}\cdot \mathbf{x} - \omega t)}.
+\]
+
+En insérant dans l’équation d’onde :
+
+\[
+(-\omega^2 + k^2)\big(1 - l_P^2(\omega^2 - k^2)\big) = 0.
+\]
+
+On obtient **deux branches de dispersion** :
+
+\[
+\boxed{
+\begin{cases}
+\omega_1^2 = k^2, & \text{onde gravitationnelle classique},\\[4pt]
+\omega_2^2 = k^2 + \dfrac{1}{l_P^2}, & \text{mode quantique de Planck.}
+\end{cases}}
+\]
+
+Le second mode correspond à une onde massive, de masse effective :
+
+\[
+m_{\text{eff}} = \frac{\hbar}{c\,l_P} = m_P,
+\]
+soit la **masse de Planck** (\( \approx 2.18\times10^{-8}\,\text{kg} \)).
+
+---
+
+## 6. Interprétation physique
+
+- \( \omega_1 \) : **propagation classique**, onde gravitationnelle sans masse.  
+- \( \omega_2 \) : **mode quantique planckien**, très lourd, pratiquement
+  non excitable à nos énergies.
+
+L’équation complète prédit donc :
+
+- Une **dispersion faible** pour les ondes gravitationnelles ordinaires
+  (\(E \ll E_P\)).
+- Une **correction ultra-haute fréquence** liée à la structure discrète
+  de l’espace-temps.
+
+---
+
+## 7. Prédictions observationnelles
+
+| Domaine | Signature attendue | Observatoire |
+|----------|-------------------|---------------|
+| **LIGO/Virgo/KAGRA** | Dispersion légère (\(v_g < c\)) à haute fréquence | Analyse spectrale fine |
+| **LISA (ESA/NASA)** | Déviation à basse fréquence (\(f \sim 10^{-3}\,\text{Hz}\)) | Test du couplage gravité–quantum |
+| **Cosmologie primordiale** | Suppression de modes \(k>k_P\) dans le fond d’ondes gravitationnelles | CMB B-modes (LiteBIRD, CMB-S4) |
+
+---
+
+## 8. Conclusion
+
+L’équation
+
+\[
+(1 + l_P^2 \Box)\Box h_{\mu\nu} = 0
+\]
+
+introduit naturellement, dans le cadre linéarisé, une **structure
+quantique du champ gravitationnel**.  
+La discrétisation de l’espace-temps à l’échelle de Planck induit :
+
+- un **spectre bimodal** (classique + quantique),  
+- une **dispersion mesurable** à haute fréquence,  
+- une **piste observationnelle** vers la gravité quantique.
+
