@@ -1,0 +1,78 @@
+---
+title: "Rétro-propagation du gradient d’erreur dans le temps"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+geometry: margin=2.5cm
+fontsize: 11pt
+---
+
+# 1. Principe  
+
+On applique à un système physique le mécanisme de **rétro-propagation** utilisé en apprentissage automatique (*backpropagation*).  
+L’erreur d’un état futur est rétro-injectée dans les conditions initiales pour minimiser une “perte” globale, exactement comme dans un réseau neuronal.  
+
+Ainsi, un système pourrait ajuster ses paramètres passés pour atteindre un futur cohérent avec un critère d’optimalité global.
+
+---
+
+# 2. Cadre  
+
+- **Psychoinformatique** : l’esprit humain est vu comme un système récurrent, où la mémoire et le raisonnement s’ajustent continuellement sous l’effet des erreurs passées.  
+- **Cosmologie computationnelle** : l’univers lui-même peut être envisagé comme un réseau qui rétro-propage son écart à la cohérence (entropie, courbure, information) jusqu’à ce que l’état global minimise une fonction de perte cosmique.
+
+---
+
+# 3. Idée-clef  
+
+L’erreur d’un système pourrait rétro-agir sur ses conditions initiales — une **rétro-causalité constructive**.  
+Autrement dit, l’état futur influence indirectement l’état initial, jusqu’à atteindre un équilibre de cohérence temporelle.  
+
+\[
+\frac{dL}{dt} = 0 \quad \Rightarrow \quad \text{auto-cohérence temporelle.}
+\]
+
+---
+
+# 4. Exemple concret  
+
+- Un modèle de neurone artificiel apprend à reconnaître des images en minimisant une fonction de perte \(L\).  
+- Chaque erreur rétro-propagée ajuste les poids et biais, modifiant donc implicitement les “conditions initiales” du réseau.  
+- Par analogie, un système physique pourrait rétro-ajuster ses états antérieurs pour réduire l’incohérence observée dans son futur.
+
+---
+
+# 5. Implications  
+
+- Si cette idée est appliquée au réel, elle impliquerait une **rétro-causalité non paradoxale**, où le futur contraint le passé par cohérence plutôt que par déterminisme.  
+- Cela remet en question la causalité linéaire classique et ouvre la voie à une physique **cohérente aux deux bords** :  
+  passé \( \leftrightarrow \) futur, erreur \( \leftrightarrow \) correction.
+
+---
+
+# 6. Limites  
+
+- La rétro-propagation est une métaphore mathématique : elle ne décrit pas directement un mécanisme physique observable.  
+- Un modèle rigoureusement fondé, ancré dans la dynamique lagrangienne ou l’information quantique, reste à construire.  
+
+---
+
+# 7. Conclusion  
+
+La **rétro-propagation du gradient d’erreur dans le temps** offre une passerelle conceptuelle entre physique, cognition et apprentissage automatique.  
+Elle suggère que l’univers pourrait être un système d’optimisation en cours d’auto-correction — un apprentissage cosmique en phase lente.
+
+---
+
+# 8. Références  
+
+- Zeilinger, A. (2010). *Retrocausality and the Quantum World.*  
+- Werbos, P. J. (1988). *Backpropagation Through Time: A Generalized Algorithm for Learning Recurrent Connections with Feedback.*  
+
+---
+
+> *« L’univers apprend de ses erreurs — non pas en avançant, mais en résonnant avec son propre futur. »*  
+> — B. Baranoff

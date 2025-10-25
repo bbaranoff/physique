@@ -1,0 +1,147 @@
+---
+title: "Kaluza–Einstein : la cinquième dimension et l’unification des champs"
+subtitle: "De la métrique à la charge, ou comment la géométrie devint champ"
+author: "Bastien Baranoff"
+date: "22 octobre 2025"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm}
+  - \usepackage{booktabs,graphicx,hyperref}
+  - \hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue}
+---
+
+# 1. Préambule historique
+
+En 1919, **Theodor Kaluza** envoie à **Albert Einstein** un manuscrit étonnant :  
+il y démontre qu’en ajoutant une **cinquième dimension** à la relativité générale,  
+on peut faire émerger, à partir de la géométrie seule, les équations de **Maxwell**.  
+
+Einstein, d’abord sceptique, finit par reconnaître dans cette approche  
+une possible **clé d’unification** entre la gravité et l’électromagnétisme.  
+C’est la première théorie géométrique de champ unifié.
+
+---
+
+# 2. La métrique à cinq dimensions
+
+On étend la métrique d’Einstein de quatre à cinq dimensions :
+
+\[
+g_{AB} =
+\begin{pmatrix}
+g_{\mu\nu} + \kappa^2 \phi^2 A_\mu A_\nu & \kappa \phi^2 A_\mu \\
+\kappa \phi^2 A_\nu & \phi^2
+\end{pmatrix},
+\]
+
+où :
+
+- \(A_\mu\) : potentiel électromagnétique,  
+- \(\phi\) : champ scalaire associé à la dimension supplémentaire,  
+- \(\kappa\) : constante de couplage,  
+- indices \(A,B = 0,1,2,3,5\), et \(\mu,\nu = 0,1,2,3\).
+
+L’action d’Einstein en 5D s’écrit :
+
+\[
+S = \int R^{(5)} \sqrt{-g^{(5)}}\, d^5x.
+\]
+
+---
+
+# 3. Réduction dimensionnelle et équations de Maxwell
+
+En imposant que la métrique ne dépende pas de la cinquième coordonnée (\(\partial_5 = 0\)),  
+le tenseur de Ricci 5D se décompose en :
+
+\[
+R_{\mu\nu}^{(5)} = R_{\mu\nu}^{(4)} - \frac{1}{2}\phi^2 F_{\mu\lambda}F_\nu{}^\lambda - \frac{1}{\phi}\nabla_\mu \nabla_\nu \phi,
+\]
+
+et les équations d’Einstein 5D deviennent :
+
+\[
+R_{\mu\nu}^{(4)} = \frac{1}{2}\phi^2 \left(F_{\mu\lambda}F_\nu{}^\lambda - \frac{1}{4}g_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}\right) + \frac{1}{\phi}\nabla_\mu \nabla_\nu \phi.
+\]
+
+Les équations de Maxwell apparaissent naturellement :
+
+\[
+\nabla_\mu(\phi^3 F^{\mu\nu}) = 0.
+\]
+
+---
+
+# 4. Interprétation physique
+
+La **cinquième dimension** n’est pas observable directement :  
+elle est supposée **compactifiée**, c’est-à-dire enroulée sur un cercle de rayon \(r_c\) très petit.  
+Un déplacement de \(2\pi r_c\) dans cette dimension laisse la physique inchangée.
+
+L’électromagnétisme émerge ainsi comme la **géométrie cachée** de cette dimension repliée.
+
+| Concept géométrique (5D) | Interprétation physique (4D) |
+|---------------------------|------------------------------|
+| Composantes \(g_{\mu\nu}\) | Champ gravitationnel |
+| Composantes \(g_{\mu5}\) | Potentiel électromagnétique \(A_\mu\) |
+| Composante \(g_{55}\) | Champ scalaire \(\phi\) |
+
+---
+
+# 5. L’extension de Klein
+
+En 1926, **Oskar Klein** quantifie l’idée :  
+si la cinquième dimension est circulaire, les particules qui s’y propagent  
+doivent avoir une **quantification de moment** selon :
+
+\[
+p_5 = \frac{n\hbar}{r_c}, \quad n \in \mathbb{Z}.
+\]
+
+L’énergie de ce mouvement dans la dimension cachée correspond à la **charge électrique**.  
+Ainsi, la charge devient un **moment cinétique dans une dimension repliée**.
+
+---
+
+# 6. Synthèse : la géométrie comme théorie des champs
+
+| Élément | Interprétation |
+|----------|----------------|
+| Espace-temps 4D | Scène visible de la gravité |
+| Dimension 5D | Source du champ électromagnétique |
+| Compactification | Invisibilité macroscopique du cinquième axe |
+| Courbure 5D | Origine commune des forces |
+
+L’approche de Kaluza–Klein anticipe la vision moderne des **théories des cordes** et des **superespaces**,  
+où les interactions fondamentales sont décrites comme des manifestations géométriques  
+dans un espace de dimension supérieure.
+
+---
+
+# 7. Lecture contemporaine
+
+Les théories modernes de grande unification (GUT, supergravité, cordes)  
+reprennent le schéma de Kaluza :  
+chaque interaction correspond à une **symétrie de l’espace interne**.
+
+L’idée fondamentale demeure :  
+> la matière est la courbure d’un espace caché.
+
+---
+
+# 8. Conclusion : l’héritage de Kaluza–Einstein
+
+La cinquième dimension n’a jamais été observée,  
+mais elle a ouvert la voie à une intuition féconde :  
+l’unification des forces passe par la **géométrisation**.  
+
+Kaluza a introduit la première pierre d’un pont entre **métrique** et **charge** ;  
+Einstein y a vu le germe d’un **monde sans dualité** entre champ et matière.  
+
+La gravité et l’électromagnétisme ne seraient plus deux langages,  
+mais **deux dialectes d’une même géométrie étendue**.

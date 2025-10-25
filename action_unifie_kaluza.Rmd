@@ -1,0 +1,211 @@
+---
+title: "Action unifiee de Kaluza-Dirac-Einstein"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm,amsfonts}
+  - \usepackage{bm}
+  - \usepackage{physics}
+  - \usepackage{tikz}
+  - \usepackage{hyperref}
+  - \usepackage{enumitem}
+  - \setlength{\parskip}{0.8em}
+  - \setlength{\parindent}{0pt}
+  - \special{pdf:minorversion 5}
+  - \special{pdf:trailerid (fix)}
+---
+
+# Connexion universelle
+
+On definit une connexion totale sur un espace-temps M de dimension quatre,  
+munie d'un groupe de jauge etendu :
+
+$$
+\mathcal{A}_\mu =
+\frac{1}{2}\omega_\mu^{ab} J_{ab}
++ \frac{1}{\ell} e_\mu^{\,a} P_a
++ A_\mu^I T_I
+$$
+
+ou :
+
+- $\omega_\mu^{ab}$ est la connexion de spin locale (Lorentz),
+- $e_\mu^{\,a}$ le tetrade,
+- $A_\mu^I$ les connexions internes (U(1), SU(2), SU(3)),
+- $J_{ab}, P_a, T_I$ sont les generateurs du groupe de de Sitter etendu  
+  $G_{total} = (U(1) \times SU(2) \times SU(3)) \rtimes SO(3,1)$.
+
+---
+
+# Courbures associees
+
+$$
+\mathcal{F}_{\mu\nu}
+= \partial_\mu \mathcal{A}_\nu - \partial_\nu \mathcal{A}_\mu + [\mathcal{A}_\mu, \mathcal{A}_\nu]
+$$
+
+soit :
+
+$$
+\mathcal{F}_{\mu\nu}
+= (R^{ab}_{\mu\nu} J_{ab} + \frac{1}{\ell} T^a_{\mu\nu} P_a)
+\oplus (F^I_{\mu\nu} T_I)
+$$
+
+avec :
+
+\begin{align*}
+R^{ab} &= d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb}, \\
+T^a &= De^a = de^a + \omega^a{}_b \wedge e^b, \\
+F^I &= dA^I + \tfrac{1}{2} f^{I}{}_{JK} A^J \wedge A^K.
+\end{align*}
+
+---
+
+# Action gravitationnelle (MacDowell-Mansouri + Holst)
+
+$$
+S_{grav} =
+\frac{1}{16\pi G} \int \varepsilon_{abcd}\, e^a \wedge e^b \wedge R^{cd}
++ \frac{1}{\gamma} \int e_a \wedge e_b \wedge R^{ab}
+- \frac{\Lambda}{24\pi G} \int \varepsilon_{abcd}\, e^a \wedge e^b \wedge e^c \wedge e^d
+$$
+
+Le premier terme est Einstein-Hilbert,  
+le second le terme Holst-Immirzi,  
+le dernier le terme cosmologique.
+
+Une formulation equivalente (MacDowell-Mansouri) :
+
+$$
+S_{MM} = \frac{\alpha}{\ell^2} \int
+\varepsilon_{abcd}\,
+\Big(R^{ab} + \frac{1}{\ell^2} e^a \wedge e^b\Big)
+\wedge
+\Big(R^{cd} + \frac{1}{\ell^2} e^c \wedge e^d\Big)
+$$
+
+---
+
+# Secteur Yang-Mills + Higgs + Dirac
+
+$$
+S_{YM} = -\sum_I \frac{1}{2g_I^2} \int \mathrm{Tr}(F^I \wedge *F^I)
++ \sum_I \frac{\theta_I}{8\pi^2} \int \mathrm{Tr}(F^I \wedge F^I)
+$$
+
+$$
+S_H = \int \Big[ (D\phi)^\dagger \wedge * (D\phi)
+- *V(\phi)
+- \xi |\phi|^2 R *1 \Big]
+$$
+
+$$
+S_D = \int *e\,
+\Big[\bar{\psi}\, i\,\gamma^a e_a{}^\mu
+(\partial_\mu + \frac{1}{4}\omega_\mu^{bc}\gamma_{bc} + A_\mu)\psi
+- y \bar{\psi} \phi \psi \Big]
+$$
+
+---
+
+# Action totale unifiee
+
+$$
+S_{total} = S_{grav} + S_{YM} + S_H + S_D
+$$
+
+La connexion $\mathcal{A}_\mu$ joue ici le role de champ unique,  
+et les courbures correspondantes engendrent les quatre forces fondamentales.
+
+---
+
+# Equations de champ (schema)
+
+- Variation $\delta e^a$ :
+
+$$
+\varepsilon_{abcd}\, e^b \wedge R^{cd}
+- \Lambda\, \varepsilon_{abcd}\, e^b \wedge e^c \wedge e^d
+= 8\pi G\, \tau_a
+$$
+
+- Variation $\delta \omega^{ab}$ :
+
+$$
+T^a = \frac{1}{2} \kappa\, \bar{\psi} \gamma^a \gamma^5 \psi
+$$
+
+- Variation $\delta A^I$ :
+
+$$
+D * F^I = J^I
+$$
+
+- Variations $\delta \phi, \delta \psi$ :  
+  equations de Klein-Gordon/Higgs et Dirac.
+
+---
+
+# Lecture unifiee de la courbure
+
+Les deux projections de la courbure $\mathcal{F}$ donnent les deux mondes :
+
+| Projection | Contraction | Equation obtenue |
+|-------------|-------------|------------------|
+| Lorentz / translation | $\varepsilon_{abcd}\, e^a \wedge e^b$ | Gravite (Einstein) |
+| Interne $T_I$ | Hodge $*$ | Maxwell-Yang-Mills |
+
+$$
+R_{\mu\nu}[A]
+= \mathrm{Tr}\big(F_{\mu\alpha}[A]F_\nu{}^{\alpha}[A]\big)
+- \frac{1}{4} g_{\mu\nu} \mathrm{Tr}\big(F_{\alpha\beta}[A]F^{\alpha\beta}[A]\big)
+$$
+
+---
+
+# Brisure de symetrie et masse
+
+Le potentiel de Higgs :
+
+$$
+V(\phi) = \lambda (|\phi|^2 - v^2)^2
+$$
+
+et le couplage $\xi |\phi|^2 R$ produisent :
+
+- les masses des bosons \(W/Z\),
+- les masses des fermions via \(y\, \bar{\psi}\,\phi\,\psi\),
+- une masse gravitationnelle effective locale si \(\xi \neq 0\).
+
+---
+
+# Resume conceptuel
+
+L'action unifiee Kaluza-Dirac-Einstein repose sur une seule courbure $\mathcal{F}$ :  
+- contraction avec $\varepsilon_{abcd}\, e^a \wedge e^b$ → Einstein-Hilbert,  
+- contraction avec Hodge-* → Maxwell-Yang-Mills.  
+
+Toutes les forces deviennent des facettes d'un meme champ de connexion,  
+et la matiere en est l'oscillation locale.
+
+---
+
+# References
+
+- Kaluza, K. (1919). On the problem of unity in physics.  
+  Sitzungsberichte der Koniglich Preussischen Akademie der Wissenschaften zu Berlin, 1–23.  
+- Dirac, P.A.M. (1928). The Quantum Theory of the Electron. Proc. Roy. Soc. A, 117, 610.  
+- MacDowell, S.W., Mansouri, F. (1977). Unified Geometric Theory of Gravity and Supergravity. Phys. Rev. Lett., 38, 739.  
+- Ashtekar, A. (1986). New Variables for Classical and Quantum Gravity. Phys. Rev. Lett., 57, 2244.  
+
+---
+
+> "La physique est la geometrie d'un champ unique,  
+>  et la matiere n'est qu'une vibration locale de sa courbure."

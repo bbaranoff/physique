@@ -1,0 +1,96 @@
+---
+title: "Superposition « vivant–mort » et inégalités de Bell"
+date: "22 octobre 2025"
+author: "Bastien Baranoff"
+output: pdf_document
+---
+
+# 1. Cadre conceptuel
+
+L’expérience de pensée du **chat de Schrödinger** place un système quantique (un atome) en corrélation avec un système macroscopique (le chat).  
+La superposition quantique \(|\Psi\rangle = \frac{1}{\sqrt{2}}(|\text{vivant}\rangle + |\text{mort}\rangle)\) illustre le **paradoxe de la mesure** :  
+avant l’observation, le système n’est dans aucun état défini.
+
+La question : une telle superposition pourrait-elle, **en principe**, violer une **inégalité de Bell** si elle était observée à l’échelle macroscopique ?
+
+---
+
+# 2. Formalisme de l’intrication
+
+Soit un système à deux sous-parties \(A\) et \(B\), chacune pouvant être dans un état \(|\uparrow\rangle\) ou \(|\downarrow\rangle\).  
+Un **état de Bell** s’écrit :
+
+\[
+|\Psi^-\rangle = \frac{1}{\sqrt{2}}\big(|\uparrow_A \downarrow_B\rangle - |\downarrow_A \uparrow_B\rangle\big).
+\]
+
+Les **corrélations quantiques** se manifestent par une violation de l’inégalité de CHSH :
+
+\[
+S = |E(A,B) + E(A',B) + E(A,B') - E(A',B')| \le 2.
+\]
+
+La mécanique quantique prédit une valeur maximale \(S_\text{QM} = 2\sqrt{2}\),  
+ce qui contredit tout modèle à variables cachées locales.
+
+---
+
+# 3. Transposition à un système macroscopique
+
+On peut formaliser la superposition « vivant/mort » sous la forme :
+
+\[
+|\Psi_{\text{chat}}\rangle = \frac{1}{\sqrt{2}}\big(|\text{vivant}_A\rangle|\text{mort}_B\rangle + |\text{mort}_A\rangle|\text{vivant}_B\rangle\big),
+\]
+où \(A\) et \(B\) représentent deux degrés de liberté corrélés du même système (par exemple : spin / position, ou deux chats identiques).  
+
+En théorie, si une mesure conjointe sur \(A\) et \(B\) pouvait être effectuée **sans décohérence**,  
+la corrélation observée devrait **violer une inégalité de Bell**,  
+confirmant la persistance de la non-localité au-delà de l’échelle microscopique.
+
+---
+
+# 4. Problème de la décohérence
+
+La **décohérence** résulte de l’interaction du système avec son environnement ;  
+elle détruit les interférences entre états \(|\text{vivant}\rangle\) et \(|\text{mort}\rangle\) à une vitesse fulgurante :
+
+\[
+\tau_{\text{décoh}} \approx \frac{\hbar^2}{\Lambda^2 k_B T},
+\]
+où \(\Lambda\) représente le couplage environnemental.  
+Pour un chat de masse \(1\,\mathrm{kg}\) à température ambiante, cette durée est de l’ordre de \(10^{-23}\,\mathrm{s}\).
+
+Ainsi, la superposition macroscopique est pratiquement **instantanément détruite**.
+
+---
+
+# 5. Limite expérimentale et interprétation
+
+Des expériences sur des molécules géantes (jusqu’à \(10^4\) u) montrent que la **cohérence quantique** peut être maintenue à température contrôlée et en ultra-vide.  
+Mais aucune expérience n’a encore démontré une **violation de Bell** dans un système vivant ou biologique.  
+
+Les obstacles :
+- la **décohérence biologique**,  
+- la difficulté de définir un **observateur quantique**,  
+- et la mesure simultanée de variables macroscopiques non-commutantes.
+
+---
+
+# 6. Lecture interprétative
+
+La superposition « vivant–mort » n’est pas une métaphore morbide,  
+mais une **extension du principe de superposition** à des degrés de liberté composites.  
+Elle interroge la frontière entre **information**, **mesure** et **réalité physique**.  
+
+La violation de Bell, dans ce cadre, serait la **preuve que la vie et la mort ne sont pas des états absolus**,  
+mais des configurations corrélées dans un espace d’états plus vaste.  
+
+---
+
+### Résumé
+
+- L’expérience du chat illustre la **non-séparabilité** entre l’observateur et le système.  
+- Une superposition « vivant/mort » équivaut formellement à un **état intriqué**.  
+- La **décohérence** empêche toute violation observable à l’échelle macroscopique.  
+- La frontière quantique/classique reste donc une **transition de cohérence**, non de principe.

@@ -1,0 +1,69 @@
+---
+title: "Gravité quantifiée et non-localité"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm,amsfonts}
+  - \usepackage{bm}
+  - \usepackage{physics}
+  - \usepackage{tikz}
+  - \usepackage{hyperref}
+  - \usepackage{enumitem}
+  - \setlength{\parskip}{0.8em}
+  - \setlength{\parindent}{0pt}
+  - \special{pdf:minorversion 5}
+  - \special{pdf:trailerid (fix)}
+---
+
+
+# Gravité quantifiée et non-localité : hypothèse de travail
+
+## 1. Cadre conceptuel
+
+- La relativité générale décrit la gravité comme une **géométrie classique du champ métrique**.  
+- La mécanique quantique décrit la **non-localité des champs** (intrication, violation de Bell).  
+- Une gravité quantifiée devrait donc, à terme, permettre des **corrélations non locales** entre modes gravitationnels.
+
+## 2. Idée heuristique
+
+- Supposons que les **modes polarisés** d’une onde gravitationnelle (\(h_+\) et \(h_\times\)) puissent être quantifiés.  
+- L’état quantique associé à une émission cohérente serait alors, par analogie avec la lumière, de type **état de Bell** :
+
+\[
+|\Psi\rangle = \frac{1}{\sqrt{2}} ( |h_+\rangle |h_\times\rangle + |h_\times\rangle |h_+\rangle ).
+\]
+
+- Si ces deux modes pouvaient être mesurés indépendamment, leurs corrélations pourraient, en principe, **violer une inégalité de Bell** :
+
+\[
+S = |E(A,B) + E(A',B) + E(A,B') - E(A',B')|.
+\]
+
+## 3. Limite actuelle
+
+- Les ondes gravitationnelles observées par **LIGO/Virgo** sont **classiques** : leur amplitude \(h \sim 10^{-21}\) correspond à des **millions de quanta par mode**, donc aucune mesure de type Bell n’est réalisable.  
+- Aucune expérience à ce jour ne permet d’accéder à un **régime gravitationnel quantique** ni de mesurer des **intrications de gravitons**.
+
+## 4. Horizon expérimental
+
+- Des projets théoriques (*Bose et al., 2017 ; Marletto & Vedral, 2018*) suggèrent que si **deux masses** se couplent uniquement par la **gravité** et s’intriquent, cela prouverait que la gravité est **quantique**.  
+- Ces expériences visent précisément à **tester une violation de Bell induite par la gravité**.
+
+## 5. Lecture prudente
+
+Les détections **LIGO** montrent que le champ gravitationnel **se propage et transporte de l’énergie**,  
+mais **ne constituent pas une preuve directe** de non-localité quantique.  
+Cependant, si la gravité est un champ quantique cohérent, elle devra, dans un régime encore inaccessible,  
+obéir aux mêmes principes d’**intrication** et de **violation de Bell** que les autres champs fondamentaux.
+
+### Résumé
+
+- Les ondes gravitationnelles observées sont **classiques**.  
+- Une gravité quantifiée impliquerait une **non-localité analogue** à celle des autres champs.  
+- La **violation de Bell** par des degrés de liberté gravitationnels reste un **objectif expérimental futur**, non une conséquence déjà observée.

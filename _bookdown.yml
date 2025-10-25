@@ -1,0 +1,12 @@
+rmd_files:
+  - "action_unifie_kaluza.Rmd"
+  - "kaluza_einstein.Rmd"
+  - "gravite_quantifié_et_non_localite.Rmd"
+  - "superposition_mort_vivant_bell.Rmd"
+  - "tryptique_non_localite.Rmd"
+  - "interferences_trou_de_ver.Rmd"
+  - "ondes_gravitationnelles_et_mq.Rmd"
+  - "densite_coherence.Rmd"
+  - "matrice_Operateurs.Rmd"
+  - "retropropagation_gradient.Rmd"
+  - "charte_energies.Rmd"

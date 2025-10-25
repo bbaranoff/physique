@@ -1,0 +1,181 @@
+---
+title: "Charte des énergies : principes et éthique"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm,amsfonts}
+  - \usepackage{bm}
+  - \usepackage{physics}
+  - \usepackage{tikz}
+  - \usepackage{hyperref}
+  - \usepackage{enumitem}
+  - \setlength{\parskip}{0.8em}
+  - \setlength{\parindent}{0pt}
+  - \special{pdf:minorversion 5}
+  - \special{pdf:trailerid (fix)}
+---
+
+# 1. Relations fondamentales
+
+**Énergie–fréquence (Planck–Einstein)**  
+\[
+E = h\nu
+\]
+où \( h = 6.626\times10^{-34}\ \text{J·s} \).
+
+**Incertitude énergie–temps (Heisenberg)**  
+\[
+\Delta E\,\Delta t \gtrsim \frac{\hbar}{2}
+\]
+Cohérence impossible à durée infinie : la précision en énergie se paie en temps.
+
+**Équivalence masse–énergie (Einstein)**  
+\[
+E = mc^2 \quad \Rightarrow \quad m_0 = \frac{E}{c^2}
+\]
+Même le photon porte une masse effective \(m_0 = h\nu/c^2\).
+
+---
+
+# 2. Paquet d’onde et énergie effective
+
+**Paquet temporel**  
+\[
+\Delta E \approx \frac{\hbar}{\Delta t}
+\]
+
+**Composantes quantique et thermique**
+\[
+E_{\text{total}} = h\nu + k_B T
+\]
+Le terme \(h\nu\) correspond à la cohérence spectrale,  
+le terme \(k_B T\) au bain thermique environnant.
+
+---
+
+# 3. Énergie et flux
+
+**Signal amorti**
+\[
+P(t) = A_0^2 e^{-t/\tau}\sin(2\pi f t)
+\]
+**Énergie dissipée**
+\[
+E(t) = k_B \alpha (1 - e^{-t/\tau})
+\]
+
+**Lien énergie–intensité**
+\[
+I(t)=\frac{h\nu^2}{4\pi c^2}|H(f)|^2, \qquad P=\int h\nu^2 |H(f)|^2 df
+\]
+
+---
+
+# 4. Largeur spectrale et énergie intégrée
+
+Pour un **paquet gaussien** :
+
+\[
+\sigma_f = \frac{\Delta\nu}{2\sqrt{2\ln 2}}, \qquad
+E_{\text{tot}} = h f_0 + 4.965 k_B \sigma_f^2
+\]
+
+La constante 4.965 provient de la forme du spectre de Planck.
+
+---
+
+# 5. Rayonnement thermique
+
+\[
+U = \frac{\hbar}{c^3}\int_0^\infty \nu^3 B_\nu(T)\,d\nu
+\]
+
+où \(B_\nu(T)\) décrit la densité de photons du champ thermique.
+
+---
+
+# 6. Spectres et décalage
+
+Pour un spectre gaussien centré en \(\nu_0\) :
+
+\[
+E_{\text{tot}} = h\nu_0 + 4.965k_B
+\left(\frac{\Delta f}{2\sqrt{2\ln 2}}\right)^2
+\]
+
+Le terme de droite mesure l’élargissement thermique ou cinétique du paquet.
+
+---
+
+# 7. Rapport quantique/thermique
+
+\[
+\frac{E_q}{E_T} =
+\begin{cases}
+\gg 1 & \text{si } \sigma \ll f_0 \quad (\text{régime quantique})\\[4pt]
+\ll 1 & \text{si } \sigma \gg f_0 \quad (\text{régime thermique})
+\end{cases}
+\]
+
+---
+
+# 8. Quantification du paquet
+
+Nombre de quanta :
+\[
+N = \frac{h\nu}{E_{\text{tot}}} = \frac{1}{2.47}
+\]
+ou selon la température :
+\[
+N = \frac{1}{4.965 + e^{\alpha/(k_B T)}}
+\]
+
+---
+
+# 9. Distribution de Boltzmann–Planck
+
+\[
+\frac{dN}{df} =
+\frac{\alpha e^{\alpha/(k_B T)}}{4.965 + e^{\alpha/(k_B T)}}
+\]
+— loi de population des fréquences dans un paquet corrélé.
+
+---
+
+# 10. Intensité temporelle
+
+\[
+I(t)=A_0^2 e^{-t/\tau}\sin^2(2\pi f t)
+   = \frac{A_0^2 e^{-t/\tau}}{2}\,[1-\cos(4\pi f t)]
+\]
+Énergie instantanée :
+\[
+E_{\text{signal}} = h\nu + \frac{k_B T(t)}{\alpha}
+\]
+
+---
+
+# 11. Invariance pendant la cohérence
+
+Tant que la largeur spectrale reste constante (\(\Delta f \approx \text{const}\)),  
+l’énergie quantique \(h\nu\) demeure stable : seule l’amplitude décroît.  
+
+---
+
+# Conclusion
+
+Ces équations forment un **socle unifié** où :  
+
+- la **fréquence** relie la matière à la lumière ;  
+- la **température** exprime le degré de mélange ;  
+- et la **largeur spectrale** mesure la perte de cohérence.  
+
+Autrement dit, toute structure — onde, particule, organisme —  
+est un **compromis dynamique entre cohérence quantique et dispersion thermique**,  
+ce qui en fait le langage commun du vivant, du champ et de la géométrie.

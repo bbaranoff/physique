@@ -1,0 +1,122 @@
+---
+title: "Auto-interférence d’une onde quantique à travers un trou de ver"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+  pdf_document:
+    latex_engine: xelatex
+geometry: margin=2.5cm
+fontsize: 11pt
+---
+
+# 1. Présentation  
+
+Le **trou de ver** est une région de l’espace-temps où la courbure est si forte que les lois de la relativité générale atteignent leurs limites :  
+le temps et l’espace y deviennent indissociables, et il existe des voies alternatives reliant deux points autrement inaccessibles.  
+
+Dans ce contexte, on peut imaginer qu’une **onde quantique** traverse un trou de ver et se retrouve face à elle-même, engendrant une interférence entre sa version initiale et sa propre réflexion.
+
+---
+
+# 2. Description mathématique  
+
+L’onde est décrite par la fonction d’onde \( \psi(x,t) \).  
+Lorsqu’elle traverse le trou de ver, elle ressort avec un **décalage de phase** \(\phi\), dépendant du potentiel gravitationnel et de la topologie du pont.  
+
+\[
+\psi_\text{tot}(x,t) = \psi(x,t) + e^{i\phi}\psi(x',t')
+\]
+
+où \(x'\) et \(t'\) sont les coordonnées de sortie, et \(\phi\) la phase accumulée lors de la traversée.
+
+---
+
+# 3. Régimes d’interférence  
+
+- **Constructive** : si \(\phi = 2\pi n\), les ondes se superposent parfaitement.  
+  L’amplitude double, l’intensité quadruple : le trou de ver agit alors comme une **cavité résonante auto-cohérente**.  
+
+- **Destructive** : si \(\phi = (2n+1)\pi\), les ondes s’annulent localement.  
+  Le système devient **instable** ou forme un **nœud d’onde stationnaire**.
+
+---
+
+# 4. Lecture relativiste  
+
+Si le trou de ver relie deux instants distincts, l’onde peut interagir avec **sa version passée**.  
+On obtient alors une condition d’auto-consistance temporelle :  
+
+\[
+\psi(t) = e^{i\theta}\psi(t - \Delta t)
+\]
+
+Seules les solutions stationnaires satisfaisant cette relation sont stables — analogues à des **modes propres temporels**.
+
+---
+
+# 5. Conséquences physiques  
+
+Une telle onde ne viole pas la causalité **si** elle respecte la cohérence de phase.  
+Le système choisit spontanément les états où passé et futur s’accordent :  
+
+- **Résonances auto-stabilisées** (modes stables à travers le trou)  
+- **Modes fantômes** (interférences destructives stables)  
+- **Quantification topologique** (seules certaines fréquences “bouclent” parfaitement)
+
+---
+
+# 6. Exemple numérique  
+
+Si la différence de phase vaut \(\phi = 2\pi\), les ondes sont parfaitement constructives :  
+\[
+|\psi_\text{tot}|^2 = 4|\psi|^2
+\]  
+Le système agit alors comme un **résonateur fermé sur lui-même**, où l’onde s’auto-renforce à chaque cycle.
+
+---
+
+# 7. Formulation compacte  
+
+\[
+\begin{cases}
+\psi_\text{tot}(x,t) = \psi(x,t) + e^{i\phi}\psi(x',t') \\
+\phi = 2\pi n \\
+E_n = \hbar \omega_n \\
+\end{cases}
+\]
+
+Les solutions stables correspondent aux valeurs propres \(\omega_n\) pour lesquelles le cycle de phase est cohérent.
+
+---
+
+# 8. Image poétique  
+
+L’onde qui se rencontre elle-même par un raccourci du cosmos  
+est comme **la mémoire de l’univers qui chante à l’unisson avec son écho futur**.  
+Si la phase s’aligne, cette chanson devient une note stable dans la résonance du temps.
+
+---
+
+# 9. Conclusion  
+
+Le phénomène d’**auto-interférence quantique à travers un trou de ver** unit les principes de la relativité générale et de la mécanique quantique dans un cadre unique.  
+Il ouvre la voie à une compréhension nouvelle des résonances topologiques et des états auto-cohérents de l’espace-temps.
+
+---
+
+# Références  
+
+- Wheeler, J. A. (1957). *Geons and the space–time continuum.* Phys. Rev.  
+- Morris, M. & Thorne, K. (1988). *Wormholes in spacetime and their use for interstellar travel.* Am. J. Phys.  
+- Novikov, I. (1989). *The self-consistency principle and time loops in general relativity.* Sov. Phys. JETP.  
+- Misner, C. W., Thorne, K. S., & Wheeler, J. A. (1973). *Gravitation.*
+
+---
+
+> “Une onde qui se croise elle-même dans le tissu du temps  
+> est la preuve que le cosmos sait jouer de sa propre mémoire.”  
+> — *B.B.*
+

@@ -1,0 +1,164 @@
+---
+title: "Mesurabilité et statut ontologique de la densité de cohérence ρ(t,t′)"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+geometry: margin=2.5cm
+fontsize: 11pt
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm}
+  - \usepackage{physics}
+  - \usepackage{bm}
+  - \usepackage{graphicx}
+  - \usepackage{hyperref}
+  - \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+---
+
+# 1. Introduction
+
+La superposition quantique décrit un système comme une combinaison linéaire d’états de base.
+Cependant, cette formulation repose sur une seule variable temporelle : l’état est défini à un instant donné.
+Pour décrire les **corrélations temporelles** — c’est-à-dire les relations entre les valeurs d’un système à des instants distincts — il faut introduire une généralisation : la **densité de cohérence**.
+
+La densité de cohérence \(\rho(t,t')\) capture la manière dont les amplitudes d’un même système se corrèlent à deux temps différents.
+Elle relie la dynamique de Schrödinger, les mesures faibles et les expériences d’interférométrie temporelle.
+Ce formalisme ouvre un cadre unifié pour étudier la **cohérence temporelle**, la **décohérence** et, potentiellement, la **structure quantique du temps**.
+
+---
+
+# 2. Définition formelle et propriétés
+
+## 2.1 Définition
+
+On définit la densité de cohérence comme la corrélation moyenne entre les amplitudes d’un état quantique à deux instants :
+
+\[
+\rho(t,t') = \langle A^\dagger(t)A(t') \rangle,
+\]
+où \(A(t)\) est l’amplitude complexe associée à l’état du système.
+
+## 2.2 Propriétés fondamentales
+
+- **Hermiticité :**
+  \[
+  \rho^*(t,t') = \rho(t',t).
+  \]
+
+- **Normalisation :**
+  \[
+  \int dt\, \rho(t,t) = 1.
+  \]
+
+- **Équation dynamique :**
+  Pour un Hamiltonien \(H(t)\), la dynamique double-temps suit une équation de type Keldysh :
+  \[
+  i\hbar\frac{\partial}{\partial t}\rho(t,t') = H(t)\rho(t,t') - \rho(t,t')H(t').
+  \]
+
+Cette forme symétrique garantit la cohérence entre les deux variables temporelles.
+
+---
+
+# 3. Mesurabilité expérimentale
+
+L’un des intérêts majeurs de \(\rho(t,t')\) réside dans sa **mesurabilité indirecte**.
+Plusieurs protocoles expérimentaux existants permettent d’accéder à ses composantes.
+
+## 3.1 Tomographie temporelle
+
+La **tomographie temporelle** reconstruit \(\rho(t,t')\) en mesurant des observables temporels \(O_k(t)\) et leurs corrélations :
+\[
+C_{k\ell}(t,t') = \langle O_k^\dagger(t)\,O_\ell(t') \rangle,
+\qquad
+\rho(t,t') = \sum_k C_k(t)C_k^*(t').
+\]
+
+### Applications actuelles
+
+- **Spectroscopie de cohérence bidimensionnelle** : utilisée pour sonder la cohérence des excitons et des spins dans les solides.
+- **Optique ultrarapide** : la cohérence de champs électromagnétiques est reconstruite à la femtoseconde par hétérodyne optique.
+- **Qubits supraconducteurs** : suivi de la cohérence temporelle entre impulsions micro-ondes séparées de quelques nanosecondes.
+
+---
+
+## 3.2 Mesures faibles
+
+Les **mesures faibles** fournissent un accès aux éléments diagonaux et hors diagonaux de \(\rho(t,t')\) sans effondrer l’état.
+
+- Pour une observable \(A(t)\), on a :
+  \[
+  \rho(t,t) = \langle A^\dagger(t)A(t)\rangle.
+  \]
+- En combinant deux mesures faibles séparées dans le temps, on peut reconstruire \(\rho(t,t')\) et suivre l’évolution de la cohérence.
+
+### Réalisations expérimentales
+
+- **Photons polarisés** (Wiseman, Lundeen) : extraction de la fonction d’onde en temps réel.  
+- **Circuits Josephson** : suivi de la cohérence des champs micro-ondes.  
+- **Interférométrie Mach–Zehnder** : mesures faibles couplées à la post-sélection.
+
+---
+
+## 3.3 Interférométrie à retard variable
+
+L’**interférométrie temporelle** mesure directement la cohérence \(\rho(t,t') = \langle A^\dagger(t)A(t') \rangle\)
+via le contraste des franges lorsque le délai entre les bras est ajusté.
+
+### Exemples
+
+- **Expériences de Ramsey** : cohérence entre deux impulsions séparées dans le temps.  
+- **Échos de spin et d’impulsions** : mesure de la décroissance de \(|\rho(t,t')|\).  
+- **Quantum eraser temporel** : reconstitution de la phase perdue entre deux instants.
+
+---
+
+# 4. Statut ontologique
+
+La question du **statut ontologique** de \(\rho(t,t')\) est centrale.
+Trois lectures sont possibles, non exclusives.
+
+- **(a) Densité de probabilité étendue**  
+  \(\rho(t,t')\) contient les corrélations entre instants et généralise la notion de densité de probabilité dans le temps.
+  C’est l’analogue temporel de la fonction de Wigner : une quasi-distribution qui encode simultanément amplitude et phase.
+
+- **(b) Amplitude corrélée**  
+  Elle relie directement les amplitudes du champ quantique à différents instants,
+  traduisant la continuité de la fonction d’onde à travers le temps.
+
+- **(c) Outil computationnel**  
+  Même si elle n’a pas d’existence physique autonome, \(\rho(t,t')\) permet de prédire les observables temporels,
+  notamment les interférences et les temps de cohérence \(T_2\) des systèmes ouverts.
+
+En ce sens, elle se situe entre **l’ontologie de la fonction d’onde** et **l’épistémologie de la mesure**.
+
+---
+
+# 5. Implications physiques
+
+- Dans les systèmes ouverts, la décroissance de \(|\rho(t,t')|\) définit le **temps de cohérence** \(T_2\).  
+- Dans le formalisme des **histoires cohérentes**, \(\rho(t,t')\) décrit les corrélations entre trajectoires temporelles.  
+- En **gravité quantique**, elle pourrait décrire les corrélations entre tranches d’espace-temps, suggérant une structure quantique du temps mesurable par interférométrie gravitationnelle.
+
+---
+
+# 6. Conclusion
+
+La densité de cohérence \(\rho(t,t')\) généralise la superposition quantique en incorporant la structure temporelle des corrélations.
+Elle relie trois domaines — formalisme théorique, instrumentation expérimentale et interprétation ontologique — dans un cadre unique.
+
+L’existence de protocoles de reconstruction expérimentale (tomographie, mesures faibles, interférométrie) montre qu’il s’agit d’un **objet opératoire**, et non d’une simple abstraction mathématique.
+Son étude ouvre la voie à une compréhension expérimentale de la cohérence temporelle et, peut-être, de la granularité du temps lui-même.
+
+---
+
+# Références
+
+1. Einstein, A., Podolsky, B., Rosen, N. (1935). *Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?*  
+2. von Neumann, J. (1932). *Mathematische Grundlagen der Quantenmechanik.*  
+3. Schrödinger, E. (1926). *An Undulatory Theory of the Mechanics of Atoms and Molecules.*  
+4. Aharonov, Y., Vaidman, L. (1990). *Properties of a Quantum System During the Time Interval Between Two Measurements.*  
+5. Gell-Mann, M., Hartle, J.B. (1993). *Classical Equations for Quantum Systems.*
+
