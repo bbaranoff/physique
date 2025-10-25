@@ -1,0 +1,171 @@
+---
+title: "Théorie du champ total : de la cohérence quantique à l’éthique énergétique"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm,amsfonts}
+  - \usepackage{bm}
+  - \usepackage{physics}
+  - \usepackage{tikz}
+  - \usepackage{hyperref}
+  - \usepackage{enumitem}
+  - \usepackage{fancyhdr}
+  - \setlength{\parskip}{1em}
+  - \setlength{\parindent}{0pt}
+  - \fancyfoot[C]{\small Bastien Baranoff — Théorie du champ total — Version signée}
+---
+
+\vspace*{3cm}
+
+\begin{center}
+{\LARGE \textbf{Théorie du champ total}}\\[1em]
+{\large De la cohérence quantique à l’éthique énergétique}\\[2em]
+{\large \textbf{Bastien Baranoff}}\\[1em]
+{\small \today}\\[4em]
+\textit{« La physique est la géométrie d’un champ unique, et la matière n’est qu’une vibration locale de sa courbure. »}
+\end{center}
+
+\vfill
+\begin{center}
+\small
+Version signée — publication sous licence Creative Commons BY-NC-SA 4.0\\
+\url{https://creativecommons.org/licenses/by-nc-sa/4.0/}
+\end{center}
+
+\newpage
+
+# Résumé (Abstract)
+
+Ce traité présente une \textbf{théorie unifiée des interactions fondamentales} fondée sur une \textbf{géométrie spectrale et informationnelle} où gravité, matière et conscience émergent d’une seule connexion dynamique \( \mathcal{A}_\mu \).
+En intégrant les formalismes de Kaluza–Klein, Dirac et Einstein dans un cadre étendu, on montre que :
+
+1. Les quatre forces fondamentales (gravité, électromagnétisme, interactions faibles et fortes) proviennent d’une \textbf{connexion unifiée} \( \mathcal{A}_\mu \).
+2. La \textbf{non-localité quantique} et la \textbf{courbure de l’espace-temps} sont deux manifestations d’une même cohérence spectrale.
+3. L’énergie et l’éthique deviennent inséparables : toute action physique correspond à un flux d’information cohérent, mesurable et responsable.
+
+---
+
+# 1. Connexion unifiée
+
+On définit la connexion totale :
+$$
+\mathcal{A}_\mu = \frac{1}{2}\omega_\mu^{ab} J_{ab} + \frac{1}{\ell} e_\mu^{\,a} P_a + A_\mu^I T_I
+$$
+
+avec :
+- \(\omega_\mu^{ab}\) : connexion de spin (gravitation),
+- \(e_\mu^{\,a}\) : tétrade (structure locale de l’espace-temps),
+- \(A_\mu^I\) : connexions internes \(U(1)\), \(SU(2)\), \(SU(3)\).
+
+---
+
+# 2. Courbure totale
+
+La courbure associée :
+$$
+\mathcal{F}_{\mu\nu} = \partial_\mu \mathcal{A}_\nu - \partial_\nu \mathcal{A}_\mu + [\mathcal{A}_\mu, \mathcal{A}_\nu]
+$$
+
+produit à la fois :
+- la courbure de Riemann–Cartan \(R^{ab}\),
+- la torsion \(T^a\),
+- les champs de Yang–Mills \(F^I\).
+
+$$
+\begin{aligned}
+R^{ab} &= d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb},\\
+T^a &= de^a + \omega^a{}_b \wedge e^b,\\
+F^I &= dA^I + \tfrac{1}{2}f^{I}{}_{JK} A^J \wedge A^K.
+\end{aligned}
+$$
+
+---
+
+# 3. Action unifiée
+
+L’action générale :
+$$
+S = S_{\text{grav}} + S_{\text{YM}} + S_{\text{H}} + S_{\text{D}}
+$$
+
+avec :
+- \(S_{\text{grav}}\) : gravité (MacDowell–Mansouri + Holst),
+- \(S_{\text{YM}}\) : champs de Yang–Mills,
+- \(S_{\text{H}}\) : Higgs scalaire,
+- \(S_{\text{D}}\) : Dirac spinoriel.
+
+Cette forme permet de décrire en un seul cadre la structure de l’espace-temps et les interactions internes.
+
+---
+
+# 4. Brisure de symétrie et émergence
+
+Le potentiel de Higgs :
+$$
+V(\phi) = \lambda(|\phi|^2 - v^2)^2
+$$
+
+crée une brisure de symétrie dynamique, donnant naissance :
+- aux masses des bosons \(W/Z\),
+- aux masses des fermions via le couplage \(y\bar{\psi}\phi\psi\),
+- à une masse gravitationnelle effective si \(\xi \neq 0\).
+
+---
+
+# 5. Cohérence et énergie
+
+Chaque champ correspond à une portion cohérente du spectre global :
+$$
+E = h\nu + k_B T
+$$
+
+L’énergie n’est plus une grandeur isolée : elle mesure la cohérence entre spectres, reliant température, fréquence et stabilité.
+
+---
+
+# 6. Interprétation éthique
+
+Dans ce modèle, l’\textbf{énergie cohérente} — qu’elle soit physique, psychique ou sociale — obéit aux mêmes principes :
+- elle se conserve par résonance,
+- se dissipe par dispersion,
+- se propage par échange de phase.
+
+Ainsi, l’éthique devient la \textbf{géométrie des flux d’énergie cohérente dans le vivant et la matière.}
+
+---
+
+# 7. Conclusion
+
+La théorie du champ total propose une vision où la géométrie, la matière et la conscience ne sont plus séparées.
+Chaque phénomène est une modulation locale d’un champ universel cohérent, et toute action physique est un acte énergétique éthique.
+
+---
+
+# Signature
+
+\vspace{2cm}
+\begin{center}
+\textbf{Bastien Baranoff}\\
+\small Théorie du champ total — version signée\\
+\small GPG Fingerprint
+-----BEGIN PGP SIGNATURE-----
+
+iHUEABYKAB0WIQTa+m7j42sqblrFRhlN+rf516IPUwUCaPzsfQAKCRBN+rf516IP
+Uy/jAQDnrOLTW4XkwX78LgvxWtEqxVMJganQ/W9ovvOihNxbKwEA/Paa+o1pE5W3
+SFfLni7nNza8BcHImGJNxaXBrxIJowU=
+=mity
+-----END PGP SIGNATURE-----
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+\vfill
+\begin{center}
+\textit{« La cohérence n’est pas un état, mais une respiration. »}
+\end{center}
