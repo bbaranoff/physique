@@ -1,0 +1,114 @@
+---
+title: "Gravité sous forme spectrale"
+author: "Bastien Baranoff"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+fontsize: 11pt
+geometry: margin=2.5cm
+header-includes:
+  - \usepackage{amsmath,amssymb}
+  - \usepackage{physics}
+  - \usepackage{booktabs}
+  - \usepackage{siunitx}
+  - \usepackage{hyperref}
+---
+
+# Gravité sous forme spectrale
+
+La courbure scalaire totale peut s'exprimer comme une **densité spectrale d'énergie** :
+
+\[
+\mathcal{R} = \int |\nu_g|^2 \, |H(\nu_g)|^2 \, d\nu_g
+\]
+
+où :
+
+- \( \mathcal{R} \) : courbure scalaire (intensité globale de la déformation de l’espace-temps)  
+- \( \nu_g \) : fréquence gravitationnelle  
+- \( H(\nu_g) \) : amplitude spectrale de la métrique
+
+---
+
+## 1. Lecture géométrique
+
+La courbure d’Einstein :
+
+\[
+\mathcal{R} \sim (\partial^2 g)
+\]
+
+devient, dans le domaine fréquentiel :
+
+\[
+\mathcal{R} = \int |\nu_g|^2 |H(\nu_g)|^2 \, d\nu_g
+\]
+
+Chaque dérivée spatiale devient une multiplication par \( i \nu_g \).  
+La courbure est donc une **énergie de phase** distribuée sur le spectre des fréquences gravitationnelles.
+
+---
+
+## 2. Lecture quantique
+
+Chaque mode \( H(\nu_g) \) transporte un quantum d’énergie :
+
+\[
+E = h \nu_g
+\]
+
+L’intégrale peut se réécrire :
+
+\[
+\mathcal{R} = \int \frac{E^2}{h^2} \, |H(E/h)|^2 \, dE
+\]
+
+La gravité est alors vue comme un **spectre de quanta très bas**, presque continu à notre échelle.
+
+---
+
+## 3. Lecture informationnelle
+
+Si \( |H(\nu_g)|^2 \) représente une densité de probabilité ou une entropie locale :
+
+\[
+\mathcal{R} = \int |\nu_g|^2 |H(\nu_g)|^2 \, d\nu_g
+\]
+
+alors la courbure devient une **mesure de complexité spectrale** de la métrique :  
+la somme pondérée de toutes les vibrations de l’espace-temps.
+
+---
+
+## 4. Forme unifiée locale
+
+\[
+\mathcal{R}(x) = \frac{8\pi G}{c^4} 
+\int |\nu|^2 \, |H_x(\nu)|^2 \, d\nu
+\]
+
+Ainsi, la gravité d’Einstein devient une **analyse spectrale de la géométrie** :  
+chaque point de l’espace-temps résonne selon ses propres harmoniques de courbure.
+
+---
+
+## Résumé
+
+\[
+\begin{array}{lll}
+\textbf{Domaine} & \textbf{Lecture} & \textbf{Interprétation principale} \\
+\hline
+\text{Géométrique} & \text{dérivées} \leftrightarrow \text{fréquences} & \text{courbure = énergie spectrale} \\
+\text{Quantique} & E = h\nu_g & \text{quanta de courbure} \\
+\text{Informationnelle} & |H(\nu_g)|^2 = \text{densité d’état} & \text{gravité = gradient d’information} \\
+\end{array}
+\]
+
+---
+
+### En résumé
+
+**La gravité est la musique du vide**,  
+et chaque point de l’espace-temps vibre selon sa signature spectrale.
